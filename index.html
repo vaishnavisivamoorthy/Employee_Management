@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Management</title>
+</head>
+<body>
+    <h1>Employee Management</h1>
+    <form id="emp_form">
+        <label for="Name">Name:</label><input type="text" name="Name" id="Name"><br>
+        <label for="desig">Degisnation:</label><input type="text" name="desig" id="desig"><br>
+        <label for="sal">Salary:</label><input type="number" name="sal" id="salary"><br>
+        <button type="submit" >Add Employee</button>
+        
+    </form>
+
+    <button onclick="employeeShow()">Show Employee</button>
+    <button onclick="avgsal()">Average Salary of All Employees</button>
+    <button onclick="empSalHigh()">High Salary Employees</button>
+    <button onclick="deleteEmployee()">Delete Employee</button>
+    <button onclick="loadAPI()">Load API Employee</button>
+    <button onclick="JSONtoObject()"> Data Conversion</button>
+    <div id="output">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
